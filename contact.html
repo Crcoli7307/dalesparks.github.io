@@ -74,29 +74,37 @@
 
         <div>
           <h2>Quick message</h2>
-          <!-- NOTE: This form is front-end only. Wire it up to your preferred service or backend. -->
-          <form class="contact-form" id="contact-form">
+
+          <!-- Formspree-powered contact form -->
+          <form
+            class="contact-form"
+            action="https://formspree.io/f/mjkqkrbv"
+            method="POST"
+          >
             <label>
               Name
               <input type="text" name="name" required />
             </label>
+
             <label>
-              Email
+              Your email
               <input type="email" name="email" required />
             </label>
+
             <label>
               Phone (optional)
               <input type="tel" name="phone" />
             </label>
+
             <label>
               How can we help?
               <textarea name="message" rows="4" required></textarea>
             </label>
+
+            <!-- you can add hidden fields for tags/subject if you want -->
+            <!-- <input type="hidden" name="_subject" value="New inquiry from All-Pro site" /> -->
+
             <button type="submit" class="btn btn-primary">Send message</button>
-            <p class="form-hint">
-              This demo form doesn’t send yet – plug it into your email/CRM or
-              a service like Formspree when you’re ready.
-            </p>
           </form>
         </div>
       </section>
