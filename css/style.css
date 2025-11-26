@@ -233,6 +233,7 @@ main {
     margin: 0 auto;
     padding-inline: 1.5rem;
     padding-block: 0.75rem;
+    column-gap: 2rem;
   }
 
   .site-header > .brand,
